@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=BenchNine:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<title>Manan Patel | Software Engineer</title>
+    
+	<!-- Start disable mobile inital scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<!-- End disable mobile inital scale -->
+	<!--[if lt IE 9]><![endif]-->
+	<!-- Start css links -->
+	<link href="../static/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../static/css/grids.css" rel="stylesheet" type="text/css">
+	<link href="../static/css/styles.css" rel="stylesheet" type="text/css">
+
+	<script>
+		$(document).ready(function() {
+		
+			if ( !("placeholder" in document.createElement("input")) ) {
+				$("input[placeholder], textarea[placeholder]").each(function() {
+					var val = $(this).attr("placeholder");
+					if ( this.value == "" ) {
+						this.value = val;
+					}
+					$(this).focus(function() {
+						if ( this.value == val ) {
+							this.value = "";
+						}
+					}).blur(function() {
+						if ( $.trim(this.value) == "" ) {
+							this.value = val;
+						}
+					})
+				});
+		
+				// Clear default placeholder values on form submit
+				$('form').submit(function() {
+		            $(this).find("input[placeholder], textarea[placeholder]").each(function() {
+		                if ( this.value == $(this).attr("placeholder") ) {
+		                    this.value = "";
+		                }
+		            });
+		        });
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<div id="PageWrapper">
+		<div id="HeaderWrapper">
+			<header class="clearfix">
+				<nav class="clearfix">
+					<ul>
+						<li><a href="#aboutsection">about</a>
+						</li>
+						<li><a href="#contactsection">contact</a>
+						</li>
+						<li><a href="#projectsection">projects</a>
+						</li>
+						<li><a href="#resumesection">resume</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="homePageInfo">
+				<div class="infoLeft">
+					<p><b>Full Name:</b>
+						<br/>Manan V. Patel</p>
+					<p><b>Hobbies:</b>
+						<br/>Programming, designing and building websites, solving mathematical problems.</p>
+					<p><b>Location:</b>
+						<br/>Pittsburgh, PA, USA</p>
+				</div>
+				
+                <div class="infoMiddle">
+					<img id="mypic" src="../static/images/my_pic.jpg" alt="My Picture" title="Manan Patel Protfolio Picture" />
+				</div>
+                
+				<div class="infoRight">
+					<p><b>Email:</b>
+						<br/><a href="mailto:someone@example.com">mananpatel.mp7@gmail.com</a>
+					</p>
+					<p><b>Website:</b>
+						<br/>www.MananVPatel.com</p>
+				</div>
+			</div>
+            
+            <div id="headercontent">Hi, my name is</div>
+            <div id="myName">Manan Patel</div>
+            <hr>
+            <div id="headercontent">I am a Computer Science student studying at the<br/>Pennsylvania State University. </div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
+		<!--HeaderWrapper-->
+		<main>
+			<div class="GridsGroupWrapper">
+				<div class="GridsGroup clearfix">
+					<div class="grid_100 CenterInlineElement clearfix darkbackground h1"> <a name="aboutsection" >about me:</a>
+						
+						    <div class="aboutMe" name="me">
+                                <p>I am an ambitious and motivated software developer, currently pursuing a bachelor's degree in Computer Science and a minor in Management Information Systems at Pennsylvania State University. Additionally, I am a resident assistant and a grader/TA, as well as an active member of multiple clubs and organizations on campus. I have built several Android applications and this portfolio website "from the ground up." I am actively seeking full time employment in the IT/Software Engineering/Development field. I will be graduating on May 5, 2017. </p>
+                                <br />
+                                <p>So, if you are looking for a great employee and you feel that I would be a good fit for your company, please e-mail me at mananpatel.mp7@gmail.com or fill out the contact form below.</p>
+                                <br />
+                            </div>
+						<p>&nbsp;</p>
+					</div>
+					<div class="grid_100 lightbackground paddingleftandright">
+						<p>&nbsp;</p>
+						<a>
+							<div class="centerstuff h4">
+								<a name="contactsection">
+									<p>contact me:</p>
+								</a>
+							</div>
+							<div id="ContactFormWrapper">
+								<div id="Contact-wrap">
+									<div id="contact-area">
+										<form method="post" id="form" name="message">
+											<input name="Name" type="text" id="Name" placeholder="Name" />
+											<input type="text" name="Email" id="Email" placeholder="Email" />
+											<textarea name="Message" rows="7" maxlength="650" cols="20" id="Message" placeholder="Message"></textarea>
+											<input type="submit" name="submit" value="Submit" class="submit-button" />
+										</form>
+										<div style="clear: both;"></div>
+									</div>
+								</div>
+							</div>
+							<!--ContactFormWrapper-->
+							<p>&nbsp;</p>
+					</div>
+					<div class="grid_100 CenterInlineElement darkbackground h1">
+						<p>&nbsp;</p>
+						<a name="projectsection">
+							<p> my projects:</p>
+                        </a>
+                        <p>&nbsp;</p>
+
+						<p id="LightboxGroup">
+							<a href="https://github.com/MananVPatel/Court-Counter-App" title = "Court Counter Application">
+								<img src="../static/images/courtcounter.png" width="150" height="150" class="project 0" />
+							</a>
+							<a href="https://github.com/MananVPatel/Classic-Sanskrit-App" title = "Classic Sanskrit Application" >
+								<img src="../static/images/sanskrit.png" width="150" height="150"  class="project 1"/>
+							</a>
+							<a href="https://github.com/MananVPatel/Lao-Ordering-App" title = "Lao Ordering Application" >
+								<img src="../static/images/lao.png" width="150" height="150" class="project 2" />
+							</a>
+						</p>
+						<p id="LightboxGroup">
+							<a href="https://github.com/allisonsteinmetz/JAM" title = "Senior Project">
+								<img src="../static/images/senior%20Project.png" width="150" height="150" class="project 3" />
+							</a>
+							<a href="https://github.com/MananVPatel/PebbleApp" title = "Pebble Watch Application">
+								<img src="../static/images/pebble.png" width="150" height="150" class="project 4" />
+							</a>
+							<a href="" title = "Portfolio Website">
+								<img src="../static/images/portfolio.png" width="150" height="150"  class="project 5" />
+							</a>
+						</p>
+                        <p id="LightboxGroup">
+							<a href="https://github.com/MananVPatel/Trivia-Game" title = "Trivia Game ">
+								<img src="../static/images/trivia.png" width="150" height="150" class="project 6" />
+							</a>
+							<a href="https://github.com/MananVPatel/Path-Finder-A-Star-Heuristic-Search-" title = "Path Finder - A* algorithm">
+								<img src="../static/images/pf.png" width="150" height="150" class="project 7" />
+							</a>
+							<a href="https://github.com/MananVPatel/Gomoku-Minimax-Algorithm-" title = "Gomoku game - Minimax Algorithm">
+								<img src="../static/images/minimax.png" width="150" height="150"  class="project 8" />
+							</a>
+						</p>
+						</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+					</div>
+					<div class="grid_100 clearfix lightbackground centerstuff h4">
+						<p>&nbsp;</p>
+						<a name="resumesection">
+							<p>my résumé:</p>
+						</a>
+						<p>&nbsp;</p>
+						<a href="../static/images/MananPatelResume.pdf" target="_blank">
+							<img class="RespondImageMaxWidth" src="../static/images/Manan_Patel_Resume.png">
+						</a>
+						<div class="h5">
+							<p>click to download pdf</p>
+						</div>
+						<div class="h6">
+							<p>(don’t forget one on the way out!)</p>
+						</div>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+				<!--GridsGroup-->
+			</div>
+			<!--GridsGroupWrapper-->
+		</main>
+		<div class="FooterWrapper darkbackground">
+			<footer class="clearfix darkbackground">
+				<p>follow me here</p> 
+                <p>&nbsp;</p>
+                <a href="https://www.linkedin.com/in/manan-patel-40a7b960/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.github.com/MananVPatel" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/mananvp" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                <p>&nbsp;</p>
+				<p id="credits">Copyright &copy; 2017 <i>Manan Patel</i> 
+				</p>
+			</footer>
+		</div>
+		<!--FooterWrapper-->
+	</div>
+	<!--PageWrapper-->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
